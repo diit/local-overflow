@@ -1,0 +1,26 @@
+{
+  "name": "local-overflow",
+  "version": "0.0.3",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --platform=node --external:sqlite3 --external:isomorphic-dompurify --outfile=dist/index.js"
+  },
+  "dependencies": {
+    "@databases/sqlite": "^3.0.0",
+    "apollo-server": "^2.21.0",
+    "cheerio": "^1.0.0-rc.5",
+    "fastq": "^1.10.1",
+    "got": "^11.8.1",
+    "graphql": "^15.5.0",
+    "he": "^1.2.0",
+    "isomorphic-dompurify": "^0.12.0",
+    "lodash.throttle": "^4.1.1",
+    "meilisearch": "^0.18.1",
+    "node-7z": "^2.1.2",
+    "sqlite3": "^5.0.2",
+    "xml-obj-transform-stream": "^1.1.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.8.48"
+  }
+}
