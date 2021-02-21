@@ -49,16 +49,18 @@ const Post = () => {
   if (error) return <p>Error :(</p>;
 
   return (
-    <PrimaryLayout>
-      <main
-        className="flex-1 relative overflow-y-auto focus:outline-none"
+    <PrimaryLayout className="lg:col-span-9 xl:col-span-10">
+      {/* overflow-y-auto */}
+      <div
+        className="flex-1 relative focus:outline-none"
         tabIndex={-1}
       >
-        <div className="py-8 xl:py-10">
+        {/* py-8 xl:py-10 */}
+        <div className="">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-5xl xl:grid xl:grid-cols-3">
             <div className="xl:col-span-2 xl:pr-8 xl:border-r xl:border-gray-200">
-              <div>
-                <div>
+              <div class="bg-white overflow-hidden shadow sm:rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
                   <div className="md:flex md:items-center md:justify-between md:space-x-4 xl:border-b xl:pb-6">
                     <div>
                       <h1 className="text-2xl font-bold text-gray-900">
@@ -130,7 +132,7 @@ const Post = () => {
                             >
                               <div className="absolute flex-shrink-0 flex items-center justify-center">
                                 <span
-                                  className="h-1.5 w-1.5 rounded-full bg-rose-500"
+                                  className="h-1.5 w-1.5 rounded-full bg-orange-500"
                                   aria-hidden="true"
                                 />
                               </div>
@@ -326,7 +328,7 @@ const Post = () => {
                       >
                         <div className="absolute flex-shrink-0 flex items-center justify-center">
                           <span
-                            className="h-1.5 w-1.5 rounded-full bg-rose-500"
+                            className="h-1.5 w-1.5 rounded-full bg-orange-500"
                             aria-hidden="true"
                           />
                         </div>
@@ -357,7 +359,7 @@ const Post = () => {
             </aside>
           </div>
         </div>
-      </main>
+      </div>
     </PrimaryLayout>
   );
 };
